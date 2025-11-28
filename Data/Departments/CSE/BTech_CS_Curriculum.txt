@@ -1,0 +1,205 @@
+###########################################################
+                    B.TECH COMPUTER SCIENCE
+                Curriculum Structure (2025–2029)
+            Sunridge Institute of Technology (SIT)
+###########################################################
+
+Program Duration: 4 Years  
+Total Semesters: 8  
+Degree Title: Bachelor of Technology (Computer Science & Engineering)
+
+-----------------------------------------------------------
+YEAR 1 — FOUNDATION COURSES
+-----------------------------------------------------------
+
+SEMESTER 1
+-----------
+Core Subjects:
+1. Programming Fundamentals using Python
+2. Engineering Mathematics–I
+3. Basic Electrical & Electronics Engineering
+4. Engineering Physics
+5. Communication Skills & Technical Writing
+
+Labs:
+- Python Programming Lab
+- Physics Lab
+
+Credits: 20
+
+
+SEMESTER 2
+-----------
+Core Subjects:
+1. Data Structures & Algorithms
+2. Engineering Mathematics–II
+3. Object Oriented Programming (C++)
+4. Digital Logic & Computer Systems
+5. Environmental Science (Mandatory)
+
+Labs:
+- DSA Lab
+- OOP Lab
+
+Credits: 22
+
+
+-----------------------------------------------------------
+YEAR 2 — CORE TECHNICAL COURSES
+-----------------------------------------------------------
+
+SEMESTER 3
+-----------
+Core Subjects:
+1. Operating Systems
+2. Database Management Systems
+3. Discrete Mathematics
+4. Computer Organization & Architecture
+5. Software Engineering Fundamentals
+
+Labs:
+- DBMS Lab
+- OS & Shell Scripting Lab
+
+Credits: 23
+
+
+SEMESTER 4
+-----------
+Core Subjects:
+1. Design & Analysis of Algorithms
+2. Computer Networks
+3. Introduction to Java & Web Technologies
+4. Formal Languages & Automata Theory
+5. Probability & Statistics for Computing
+
+Labs:
+- Networking Lab
+- Java/Full Stack Lab
+
+Credits: 24
+
+
+-----------------------------------------------------------
+YEAR 3 — SPECIALIZATION & ELECTIVES
+-----------------------------------------------------------
+
+SEMESTER 5
+-----------
+Core Subjects:
+1. Theory of Computation
+2. Artificial Intelligence & Machine Learning
+3. Cybersecurity & Information Assurance
+4. Compiler Design
+
+Electives (Choose One):
+- Cloud Computing
+- Mobile App Development
+- Big Data Concepts
+
+Labs:
+- ML Programming Lab
+- Compiler Design Lab
+
+Credits: 25
+
+
+SEMESTER 6
+-----------
+Core Subjects:
+1. Deep Learning & Neural Networks
+2. Distributed Systems
+3. Internet of Things (IoT)
+4. Advanced Database Systems
+
+Electives (Choose One):
+- Blockchain Technology
+- Computer Vision
+- Software Testing & QA
+
+Industry Component:
+- Minor Project / Internship-I (8 Weeks)
+
+Credits: 23
+
+
+-----------------------------------------------------------
+YEAR 4 — RESEARCH & INDUSTRY EXPERIENCE
+-----------------------------------------------------------
+
+SEMESTER 7
+-----------
+Core Subjects:
+1. Human–Computer Interaction
+2. Professional Ethics & Cyber Laws
+3. DevOps & Software Deployment Practices
+
+Electives (Choose One):
+- Data Mining & Warehousing
+- Game Development
+- NLP (Natural Language Processing)
+- AR/VR Systems
+
+Project Work:
+- Major Project Phase–I
+
+Credits: 20
+
+
+SEMESTER 8
+-----------
+Core Subjects:
+1. Entrepreneurship & Innovation in Tech
+2. Cloud Infrastructure & Scalable Computing (Capstone)
+
+Electives (Choose One):
+- Robotics & Automation
+- Quantum Computing Fundamentals
+- Edge Computing
+
+Project Work:
+- Major Project Phase–II / Industry Internship (Full Semester)
+
+Credits: 18
+
+
+-----------------------------------------------------------
+GRADING & ASSESSMENT WEIGHTAGE
+-----------------------------------------------------------
+
+- Mid-Semester Exams: 25%
+- End Semester Exams: 50%
+- Labs & Continuous Evaluation: 15%
+- Attendance & Participation: 10%
+
+Minimum passing requirement: 40% per subject and overall CGPA ≥ 5.0
+
+-----------------------------------------------------------
+CAREER PATHWAYS AFTER COMPLETION
+-----------------------------------------------------------
+
+Possible Roles:
+✔ Software Developer  
+✔ Machine Learning Engineer  
+✔ Cloud Engineer  
+✔ DevOps Engineer  
+✔ Cybersecurity Analyst  
+✔ Database Administrator  
+✔ Data Scientist  
+✔ Mobile / Web Application Developer  
+
+Higher Study Options:
+- M.Tech / MS (Computer Science)
+- MBA (Tech / IT)
+- Certifications (AWS, GCP, Cisco, Databricks, etc.)
+
+-----------------------------------------------------------
+CONTACT (DEPARTMENT OF COMPUTER SCIENCE)
+
+Office: +91-98765 44350  
+Email: cs-department@sit.edu.in  
+Website: www.sit.edu.in/cse  
+
+###########################################################
+                    END OF DOCUMENT
+###########################################################

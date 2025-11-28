@@ -1,0 +1,119 @@
+###############################################################
+              COMPUTER SCIENCE & ENGINEERING DEPARTMENT
+                     FACULTY DIRECTORY (2025–2026)
+              Sunridge Institute of Technology (SIT)
+###############################################################
+
+The Department of Computer Science & Engineering consists of experienced faculty members specializing in various domains of computing, research, and innovation.  
+Below are the official faculty details including designation, specialization, email, and contact information.
+
+---------------------------------------------------------------
+1. Dr. Aarav Mehta
+---------------------------------------------------------------
+Designation: Head of Department (HoD) & Professor  
+Qualification: Ph.D. in Computer Science (IISc Bangalore)  
+Experience: 18+ Years  
+Specialization: Distributed Systems, Cloud Computing, DevOps  
+Email: aarav.mehta@sit.edu.in  
+Contact: +91-98765 55010
+
+---------------------------------------------------------------
+2. Dr. Neha Verma
+---------------------------------------------------------------
+Designation: Professor  
+Qualification: Ph.D. in Artificial Intelligence (IIT Delhi)  
+Experience: 15+ Years  
+Specialization: Machine Learning, NLP, Deep Learning  
+Email: neha.verma@sit.edu.in  
+Contact: +91-98765 55011
+
+---------------------------------------------------------------
+3. Dr. Rohan Shah
+---------------------------------------------------------------
+Designation: Associate Professor  
+Qualification: Ph.D. in Cybersecurity (NIT Surat)  
+Experience: 12+ Years  
+Specialization: Network Defense, Ethical Hacking, Cryptography  
+Email: rohan.shah@sit.edu.in  
+Contact: +91-98765 55012
+
+---------------------------------------------------------------
+4. Prof. Priya Nair
+---------------------------------------------------------------
+Designation: Assistant Professor  
+Qualification: M.Tech in Computer Science (IIT Gandhinagar)  
+Experience: 8 Years  
+Specialization: Data Structures, Algorithms, Compiler Design  
+Email: priya.nair@sit.edu.in  
+Contact: +91-98765 55013
+
+---------------------------------------------------------------
+5. Prof. Sameer Patil
+---------------------------------------------------------------
+Designation: Assistant Professor  
+Qualification: M.Tech in Information Security (VJTI Mumbai)  
+Experience: 7 Years  
+Specialization: Cybersecurity, Vulnerability Assessment, SOC  
+Email: sameer.patil@sit.edu.in  
+Contact: +91-98765 55014
+
+---------------------------------------------------------------
+6. Dr. Meenal Joshi
+---------------------------------------------------------------
+Designation: Associate Professor  
+Qualification: Ph.D. in Human–Computer Interaction (IIT Hyderabad)  
+Experience: 10 Years  
+Specialization: UX Design, UI Engineering, AR/VR  
+Email: meenal.joshi@sit.edu.in  
+Contact: +91-98765 55015
+
+---------------------------------------------------------------
+7. Prof. Karan Bhatt
+---------------------------------------------------------------
+Designation: Senior Lecturer  
+Qualification: M.Tech in Computer Engineering (DAIICT)  
+Experience: 6 Years  
+Specialization: Web Development, Docker, DevOps Pipelines  
+Email: karan.bhatt@sit.edu.in  
+Contact: +91-98765 55016
+
+---------------------------------------------------------------
+8. Dr. Pooja Desai
+---------------------------------------------------------------
+Designation: Associate Professor  
+Qualification: Ph.D. in Robotics & AI (IIT Kanpur)  
+Experience: 9 Years  
+Specialization: Robotics, Computer Vision, Autonomous Systems  
+Email: pooja.desai@sit.edu.in  
+Contact: +91-98765 55017
+
+---------------------------------------------------------------
+9. Prof. Harshit Gupta
+---------------------------------------------------------------
+Designation: Assistant Professor  
+Qualification: M.Tech (BITS Pilani)  
+Experience: 5 Years  
+Specialization: Data Science, Business Intelligence, Big Data  
+Email: harshit.gupta@sit.edu.in  
+Contact: +91-98765 55018
+
+---------------------------------------------------------------
+10. Dr. Swati Kulkarni
+---------------------------------------------------------------
+Designation: Professor  
+Qualification: Ph.D. in Software Engineering (MIT Pune)  
+Experience: 14 Years  
+Specialization: Software Architecture, Testing, SDLC, Agile  
+Email: swati.kulkarni@sit.edu.in  
+Contact: +91-98765 55019
+
+
+###############################################################
+Department Office Contact:
+Phone: +91-98765 44350  
+Email: cs-department@sit.edu.in
+Website: www.sit.edu.in/cse
+
+###############################################################
+                         END OF FILE
+###############################################################

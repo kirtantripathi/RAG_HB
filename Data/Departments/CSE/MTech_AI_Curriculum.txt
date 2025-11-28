@@ -1,0 +1,132 @@
+###########################################################
+                    M.TECH COMPUTER SCIENCE
+                Curriculum Structure (2025–2027)
+            Sunridge Institute of Technology (SIT)
+###########################################################
+
+Program Duration: 2 Years  
+Total Semesters: 4  
+Degree Title: Master of Technology (Computer Science & Engineering)
+
+-----------------------------------------------------------
+YEAR 1 — ADVANCED FOUNDATIONS & RESEARCH BASICS
+-----------------------------------------------------------
+
+SEMESTER 1
+-----------
+Core Subjects:
+1. Advanced Algorithms & Optimization Techniques  
+2. Advanced Operating Systems  
+3. Statistical Methods for AI & Data Science  
+4. Research Methodology & Technical Writing  
+
+Electives (Choose One):
+- Modern Computer Architecture
+- Distributed Ledger & Blockchain Systems
+- Wireless & Mobile Computing
+
+Labs:
+- Algorithm Simulation & Analysis Lab  
+- Research Writing & Technical Tools Lab (LaTeX, Zotero, IEEE Format)
+
+Credits: 22
+
+
+SEMESTER 2
+-----------
+Core Subjects:
+1. Machine Learning & Deep Neural Networks  
+2. Advanced Database Systems & Data Engineering  
+3. Cloud Computing & Virtualization Technologies  
+4. High Performance Computing (HPC)  
+
+Electives (Choose One):
+- Natural Language Processing
+- Artificial General Intelligence (AGI) Foundations
+- Advanced Cybersecurity & Digital Forensics
+
+Labs:
+- Machine Learning & Neural Programming Lab  
+- Cloud Deployment & Containerization Lab  
+
+Industry Component:
+- Mini Project / Industrial Internship (6–8 Weeks)
+
+Credits: 23
+
+
+-----------------------------------------------------------
+YEAR 2 — SPECIALIZATION, RESEARCH, AND DISSERTATION
+-----------------------------------------------------------
+
+SEMESTER 3
+-----------
+Core Subjects:
+1. Deep Learning Applications & Optimization  
+2. Data Science for Decision Systems  
+3. Research Seminar / Colloquium  
+
+Electives (Choose One):
+- Computer Vision & Image Processing
+- Intelligent Robotics
+- Edge & IoT Intelligence System Design
+- Quantum Machine Learning  
+
+Project Work:
+- Thesis / Dissertation Phase–I (Proposal + Literature Review)
+
+Credits: 20
+
+
+SEMESTER 4
+-----------
+Core Subjects:
+1. AI Ethics, Policy & Responsible Computing  
+2. Entrepreneurship & Innovation in Emerging Technologies  
+
+Electives (Choose One):
+- Generative AI & Language Models  
+- Autonomous Systems & Reinforcement Learning  
+- Systems Security Engineering  
+
+Project Work:
+- Thesis / Dissertation Phase–II  
+- Industry Thesis / Publication Target  
+
+Credits: 18
+
+
+-----------------------------------------------------------
+GRADING & ASSESSMENT WEIGHTAGE
+-----------------------------------------------------------
+
+- Mid-Semester Exams: 20%  
+- End Semester Exams: 40%  
+- Continuous Internal Evaluation / Seminars: 20%  
+- Research Work / Project Components: 20%  
+
+Minimum passing requirement: 50% per subject and overall CGPA ≥ 6.0  
+
+
+-----------------------------------------------------------
+CAREER PATHWAYS AFTER COMPLETION
+-----------------------------------------------------------
+
+Possible Roles:
+✔ AI / ML Engineer  
+✔ Research Scientist  
+✔ Data Scientist / Data Engineer  
+✔ NLP / CV Specialist  
+✔ Academic Researcher / Professor  
+✔ System Performance & Optimization Engineer  
+
+-----------------------------------------------------------
+CONTACT (DEPARTMENT OF COMPUTER SCIENCE)
+
+Office: +91-98765 44350  
+Email: pg-cs@sit.edu.in  
+Website: www.sit.edu.in/pg-cse  
+
+###########################################################
+                    END OF DOCUMENT
+###########################################################
