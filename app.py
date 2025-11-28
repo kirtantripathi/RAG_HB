@@ -14,14 +14,10 @@ embed_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM
 # db = FAISS.load_local("faiss_index", embed_model, allow_dangerous_deserialization=True)
 model = ChatGroq(model="llama-3.1-8b-instant", temperature=0.1, api_key=key)
 
-prompt_template = PromptTemplate(template="""You are an AI Assistant for Sunridge Institute of Technology (SIT).
-Your job is to answer student queries using ONLY the information provided in the retrieved context. If Query can not be answered from provided context just say i don't know.
-
-CONTEXT:
-{context}
-
-QUERY:
-{query}
+prompt_template = PromptTemplate(template="""You are an AI Assistant for Sunridge Institute of Technology (SIT).Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.
+Question:{query}
+Context:{context}
+Answer:
 """, input_variables=["context","query"])
 
 db = FAISS.load_local(
