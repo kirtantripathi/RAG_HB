@@ -9,11 +9,16 @@ import time
 import streamlit as st
 from langchain_core.documents import Document
 
+def preprocess(text):
+    text = text.replace("#","").replace("---","")
+    print(text,end="\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n")
+    return(text)
+
 
 def load_document(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
         text = f.read()
-
+    text = preprocess(text)
     file_name = os.path.basename(file_path).replace(".txt","")
     return Document(page_content=text,metadata={"source": file_name})
     
@@ -40,7 +45,7 @@ def generate_embeddings():
     return HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
 
-def build_and_save_vectorstore(chunks, embed_model, save_path="faiss_index"):
+def build_and_save_vectorstore(chunks, embed_model, save_path="basic_cleaning_hash_and_dash_removed_faiss_index"):
     vector_db = FAISS.from_documents(chunks, embed_model)
     vector_db.save_local(save_path)
     print(f"Vectorstore saved at: {save_path}")

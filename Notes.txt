@@ -1,0 +1,1 @@
+1> Basic cleaning (removing ##s and --s) of data degraded the performance.
