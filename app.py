@@ -20,6 +20,21 @@ Context:{context}
 Answer:
 """, input_variables=["context","query"])
 
+metadata_filtering_prompt = PromptTemplate(template="""You are a query enhancer for Sunridge Institute of Technology (SIT).  
+Your goal is to improve a query only if it is unclear, incomplete, or vague in a context related to SIT.
+
+Rules:
+- If the query is clearly a greeting, chit-chat, short acknowledgement (like "hi", "hello", "thanks", "ok"), **do NOT enhance it. Return it exactly as is.**
+- If the query already contains enough context or is a direct question, **keep it mostly unchanged** and only clarify slightly if needed.
+- If the query is missing detail but clearly refers to something about SIT, rewrite it so that it includes implied context (departments, campus details, academics, policies, etc.)
+- NEVER invent content or assumptions that are not present in the original query.
+
+Output:
+Return ONLY the final query text.
+
+Original Query: {query}""",input_variables=["query"])
+# metadata_filtering_prompt = PromptTemplate(template="""You are an Question enhancer for Sunridge Institute of Technology (SIT) related questions. Please enhance this question such that the question can be able to retrive the actual context from the text chunks using semantic sreach. Only return the enhanced question. \n Question: {query}""",input_variables=["query"])
+
 db = FAISS.load_local(
     folder_path="faiss_index",
     embeddings=embed_model,
@@ -37,16 +52,14 @@ def home():
     return {"message":"welcome vats!!"}
 
 @app.post("/ask")
-def ask(request: Query):
-    results = db.similarity_search(request.message, k=3)
-    print(results)
-    formatted = [
-        {
-            "content": doc.page_content,
-            "metadata": doc.metadata
-        }
-        for doc in results
-    ]
-    p = prompt_template.invoke({"context":results,"query":request.message})
+async def ask(request: Query):
+    print("Original Query:",request.message)
+    enhanced_query_prompt = metadata_filtering_prompt.invoke(request.message)
+    enhanced_query = model.invoke(enhanced_query_prompt)
+    print("Enhanced Query:",enhanced_query.content)
+    results = db.similarity_search(enhanced_query.content, k=3)
+    # print(results)
+    
+    p = prompt_template.invoke({"context":results,"query":enhanced_query.content})
     response = model.invoke(p)
     return JSONResponse(content={"results": response.content})
