@@ -38,7 +38,8 @@ def main():
         st.chat_message('user').markdown(user_input)
         
         # Get the response from the API
-        bot_response = get_response(user_input)
+        with st.spinner("Thinking..."):
+            bot_response = get_response(user_input)
         
         # Display bot response
         st.session_state['messages'].append({'role': 'assistant', 'content': bot_response})
