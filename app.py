@@ -54,12 +54,23 @@ def home():
 @app.post("/ask")
 async def ask(request: Query):
     print("Original Query:",request.message)
-    enhanced_query_prompt = metadata_filtering_prompt.invoke(request.message)
+    enhanced_query_prompt = metadata_filtering_prompt.invoke({"query":request.message})
     enhanced_query = model.invoke(enhanced_query_prompt)
     print("Enhanced Query:",enhanced_query.content)
-    results = db.similarity_search(enhanced_query.content, k=3)
+
+    THRESHOLD = 0.4  
+    results = db.similarity_search_with_relevance_scores(enhanced_query.content, k=3)
+
+    for doc, score in results:
+        print(doc,"\n",score,"\n\n")
+
+    filtered_docs = [doc for doc, score in results if score >= THRESHOLD]
+
     # print(results)
+    context_text = "\n\n".join(
+        f"[{i+1}] {doc.page_content}" for i, doc in enumerate(filtered_docs)
+    )
     
-    p = prompt_template.invoke({"context":results,"query":enhanced_query.content})
+    p = prompt_template.invoke({"context":context_text,"query":enhanced_query.content})
     response = model.invoke(p)
     return JSONResponse(content={"results": response.content})
