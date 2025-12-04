@@ -19,7 +19,7 @@ def get_response(message):
 
 # Streamlit app layout
 def main():
-    st.title("Chatbot Prototype")
+    st.title("Chatbot Prototype 💬")
 
     # Session state to store chat history
     if 'messages' not in st.session_state:

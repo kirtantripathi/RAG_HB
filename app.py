@@ -8,8 +8,11 @@ import os
 from fastapi.responses import JSONResponse
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
+import cohere
 
 key = open("keys.txt").read()
+cohere_key = open("cohere_key.txt").read()
+co = cohere.ClientV2(api_key=cohere_key)
 embed_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 # db = FAISS.load_local("faiss_index", embed_model, allow_dangerous_deserialization=True)
 model = ChatGroq(model="llama-3.1-8b-instant", temperature=0.1, api_key=key)
@@ -20,8 +23,7 @@ Context:{context}
 Answer:
 """, input_variables=["context","query"])
 
-metadata_filtering_prompt = PromptTemplate(template="""You are a query enhancer for Sunridge Institute of Technology (SIT).  
-Your goal is to improve a query only if it is unclear, incomplete, or vague in a context related to SIT.
+metadata_filtering_prompt = PromptTemplate(template="""You are an Question enhancer for Sunridge Institute of Technology (SIT) related questions. Please enhance this question such that the question can be able to retrive the actual context from the text chunks using semantic sreach. Only return the enhanced question.
 
 Rules:
 - If the query is clearly a greeting, chit-chat, short acknowledgement (like "hi", "hello", "thanks", "ok"), **do NOT enhance it. Return it exactly as is.**
@@ -58,19 +60,30 @@ async def ask(request: Query):
     enhanced_query = model.invoke(enhanced_query_prompt)
     print("Enhanced Query:",enhanced_query.content)
 
-    THRESHOLD = 0.4  
-    results = db.similarity_search_with_relevance_scores(enhanced_query.content, k=3)
-
-    for doc, score in results:
-        print(doc,"\n",score,"\n\n")
-
-    filtered_docs = [doc for doc, score in results if score >= THRESHOLD]
+    results = db.similarity_search(enhanced_query.content, k=10)
+    # results2 = db.similarity_search_with_relevance_scores(request.message, k =3)
+    
+    list_of_docs = []
+    for doc in results:
+        list_of_docs.append(doc.page_content)
+    
+    response = co.rerank(
+        model="rerank-v3.5",
+        query=request.message,
+        documents=list_of_docs,
+        top_n=5,
+    )
+    filtered_docs = []
+    for i in response.results:
+        print(i.index)
+        filtered_docs.append(list_of_docs[i.index])
+    print(filtered_docs)
 
     # print(results)
     context_text = "\n\n".join(
-        f"[{i+1}] {doc.page_content}" for i, doc in enumerate(filtered_docs)
+        f"[{i+1}] {doc}" for i, doc in enumerate(filtered_docs)
     )
     
-    p = prompt_template.invoke({"context":context_text,"query":enhanced_query.content})
+    p = prompt_template.invoke({"context":context_text,"query":request.message})
     response = model.invoke(p)
     return JSONResponse(content={"results": response.content})
